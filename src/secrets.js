@@ -1,3 +1,4 @@
+import {pathToFileURL} from 'node:url'
 import {open} from 'node:fs/promises'
 
 /**
@@ -9,10 +10,11 @@ import {open} from 'node:fs/promises'
  * @return {Promise<string>} If success return the file content else the passed argument (file).
  */
 async function readSecrets(file) {
+	const _file = file instanceof URL ? file : pathToFileURL(file)
 	let filehandle
 
 	try {
-		filehandle = await open(file, 'r+')
+		filehandle = await open(_file, 'r')
 		return await filehandle.readFile('utf8')
 	} catch (error) {
 		console.error(error)

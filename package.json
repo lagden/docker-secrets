@@ -1,6 +1,6 @@
 {
   "name": "@tadashi/docker-secrets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper to read the docker secrets.",
   "type": "module",
   "main": "./src/secrets.js",
