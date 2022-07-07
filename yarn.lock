@@ -159,9 +159,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tadashi/secrets@workspace:.":
+"@tadashi/docker-secrets@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@tadashi/secrets@workspace:."
+  resolution: "@tadashi/docker-secrets@workspace:."
   dependencies:
     ava: 4.3.0
     c8: 7.11.3
