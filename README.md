@@ -13,7 +13,7 @@
 [coveralls]:       https://coveralls.io/github/lagden/docker-secrets?branch=main
 
 
-Helper to read docker secret file.
+Helper to read the docker secrets.
 
 
 ## Install
@@ -39,9 +39,9 @@ const password = await readSecrets(PASSWD)
 
 ## API
 
-### readSecrets(file: string): Promise<string>
+### readSecrets(file: string | URL): Promise<string>
 
-If success return the file content else the passed argument (file)
+If success return the file content else the passed argument (file).
 
 
 ## License

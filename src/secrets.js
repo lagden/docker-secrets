@@ -1,9 +1,12 @@
 import {open} from 'node:fs/promises'
 
 /**
- * Helper to read docker secret file
- * @param {string} file - file path
- * @return {Promise<string>} If success return the file content else the passed argument (file)
+ * Helper to read the docker secrets.
+ *
+ * @async
+ * @function readSecrets
+ * @param {string|URL} file - The file path.
+ * @return {Promise<string>} If success return the file content else the passed argument (file).
  */
 async function readSecrets(file) {
 	let filehandle
